@@ -24,7 +24,16 @@ Du kan velge hva innholdet i variablene skal være. Prøv å bruke både let og
 const når du definerer variablene.
 ******************************************************************************/
 
-// Skriv koden for oppgave 2 her
+const message = "hello world";
+const firstName = "Hello";
+const lastName = "World";
+let temperature = 15;
+let scorch = 30;
+let freeze = 5;
+const helloWorld = true;
+const goodbyeWorld = false;
+const beginner = ["hello", "world", 20, 25, true];
+const advanced = ["goodbye", "world", 21, 30, false];
 
 /******************************************************************************
 OPPGAVE 3
@@ -36,7 +45,7 @@ Prøv ut noen av operatorene vi så på i forrige forelesning:
 Skriv noen eksempler der du tester disse operatorene.
 ******************************************************************************/
 
-// Skriv koden for oppgave 3 her
+console.log(scorch + freeze);
 
 /******************************************************************************
 OPPGAVE 4
