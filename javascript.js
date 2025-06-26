@@ -78,7 +78,7 @@ Prøv å endre verdiene på variablene for å sikre at IF/ELSE-setningen din
 håndterer alle tilfeller korrekt.
 ******************************************************************************/
 
-let userName = "hei";
+let userName = "im a string";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
@@ -86,13 +86,19 @@ let goToPage = "";
 
 // Skriv koden for oppgave 4 her
 
-if (userName !== "" && userAge >= 18 && userIsBlocked === false) {
+if (
+  typeof userName === "string" &&
+  userName !== "" &&
+  userAge >= 18 &&
+  userIsBlocked === false
+) {
   userIsLoggedIn = true;
   goToPage = "/home";
   console.log(`You made it ${userName} finally`);
 } else {
   console.log("what went wrong, you were doing so good?");
 }
+console.log(goToPage);
 
 /******************************************************************************
 OPPGAVE 5
