@@ -46,6 +46,16 @@ Skriv noen eksempler der du tester disse operatorene.
 ******************************************************************************/
 
 console.log(scorch + freeze);
+console.log(firstName + message);
+console.log(scorch - 2);
+scorch += 5;
+console.log(scorch);
+scorch++;
+console.log(scorch);
+scorch -= 23;
+console.log(scorch);
+console.log(freeze - scorch - temperature);
+console.log(freeze * scorch);
 
 /******************************************************************************
 OPPGAVE 4
@@ -68,13 +78,21 @@ Prøv å endre verdiene på variablene for å sikre at IF/ELSE-setningen din
 håndterer alle tilfeller korrekt.
 ******************************************************************************/
 
-let userName = "";
+let userName = "hei";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
 // Skriv koden for oppgave 4 her
+
+if (userName !== "" && userAge >= 18 && userIsBlocked === false) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log(`You made it ${userName} finally`);
+} else {
+  console.log("what went wrong, you were doing so good?");
+}
 
 /******************************************************************************
 OPPGAVE 5
@@ -93,4 +111,5 @@ at betingelsen din fungerer som den skal.
 
 const userMale = false;
 
-// Skriv koden for oppgave 5 her
+const userTitle = userMale ? "Mr." : "mrs.";
+console.log(userTitle);
